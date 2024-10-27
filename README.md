@@ -8,10 +8,10 @@ This C program collects system entropy by using various system data sources and 
 
 Entropy Sources:
 
-   - Clock jitter (CLOCK_MONOTONIC and CLOCK_MONOTONIC_RAW)
-   - CPU statistics from /proc/stat
-   - System temperature from /sys/class/thermal/thermal_zone0/temp
-   - System load averages from /proc/loadavg
+- Clock jitter (CLOCK_MONOTONIC and CLOCK_MONOTONIC_RAW): Variability in clock timing.
+- CPU statistics from /proc/stat: Data about CPU usage and performance metrics.
+- System temperature from /sys/class/thermal/thermal_zone0/temp: Temperature readings to introduce variability in the entropy pool.
+- System load averages from /proc/loadavg: Measurement of the computer's temperature for thermal monitoring.
 
 Safety measures:
  - Fallback: If primary entropy sources are unavailable, it falls back to /dev/urandom.
