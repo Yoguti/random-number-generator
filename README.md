@@ -22,6 +22,7 @@ Safety measures:
 
 This project was developed as a learning exercise to explore Random Number Generators (RNGs) and Cryptographically Secure Pseudo-Random Number Generators (CSPRNGs). **Please note that this implementation has not been rigorously tested for cryptographic security! It is not suitable for real-world or production use.**
 
-![image alt](https://github.com/Yoguti/random-number-generator/blob/main/redo.png?raw=true)
+![entropyval1](https://github.com/user-attachments/assets/92b901cd-c7d5-43c9-b2ed-df7a3707a4db)
+
 
 The entropy sources gathered here might introduce sufficient randomness to produce unpredictable pseudo-random output; however, this is not guaranteed. As seen in the graph, very similar values sometimes repeat in close succession. This lack of variation could be due to minimal changes between ticks, as entropy is collected during each loop iteration in the **collect_entropy()** function.
